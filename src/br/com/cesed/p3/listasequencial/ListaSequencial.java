@@ -1,7 +1,7 @@
 package br.com.cesed.p3.listasequencial;
 
-import br.com.cesed.p3.excessoes.PosicaoInvalidaException;
-import br.com.cesed.p3.excessoes.ValorInvalidoException;
+import br.com.cesed.p3.excecoes.PosicaoInvalidaException;
+import br.com.cesed.p3.excecoes.ValorInvalidoException;
 
 public class ListaSequencial {
 
