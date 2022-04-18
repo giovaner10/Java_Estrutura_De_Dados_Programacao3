@@ -45,7 +45,11 @@ public class ListaSequencial {
         return inseridos == 0;
     }
 
-    public void remove(Object elemento){
+    public Object remove(Object elemento){
+        Object objectRemovido = arrayInterno[inseridos - 1];
+        arrayInterno[inseridos - 1] = null;
+        inseridos--;
+        return objectRemovido;
 
     }
 
