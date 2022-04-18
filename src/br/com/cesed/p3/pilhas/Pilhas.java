@@ -1,5 +1,7 @@
 package br.com.cesed.p3.pilhas;
 
+import br.com.cesed.p3.excessoes.ValorInvalidoException;
+
 public class Pilhas {
 
     public static final int ALOCACAO_INICIAL = 3;
@@ -9,6 +11,9 @@ public class Pilhas {
 
 
     public void push(Object novoElemento){
+        if(novoElemento == null){
+            throw new ValorInvalidoException("Elemento nulo nao pode ser inserido");
+        }
 
         checarTamanho();
         arrayInterno[inseridos] = novoElemento;
