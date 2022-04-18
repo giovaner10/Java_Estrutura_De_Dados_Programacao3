@@ -9,42 +9,58 @@ public class Pilhas {
 
     private int inseridos;
 
-
-    public void push(Object novoElemento){
-        if(novoElemento == null){
+    /**
+     * Metodo que serve para adicionar um novo elemento.
+     *
+     * @param novoElemento Elemento que vai ser adicionado.
+     */
+    public void push(Object novoElemento) {
+        if (novoElemento == null) {
             throw new ValorInvalidoException("Elemento nulo nao pode ser inserido");
         }
-
         checarTamanho();
         arrayInterno[inseridos] = novoElemento;
         inseridos++;
-
     }
 
-    public Object pop(){
+    /**
+     * Metodo que remove o ultimo elemento.
+     *
+     * @return O elemneto que foi removido
+     */
+    public Object pop() {
         Object objectRemovido = arrayInterno[inseridos - 1];
         arrayInterno[inseridos - 1] = null;
         inseridos--;
         return objectRemovido;
     }
 
-    public Object top(){
-        return arrayInterno[inseridos-1];
+    /**
+     * @return O elemento que esta no topo da pilha.
+     */
+    public Object top() {
+        return arrayInterno[inseridos - 1];
     }
 
-    public Object peek(){
+    /**
+     * @return o elemento que esta no topo da pilha
+     */
+    public Object peek() {
         return top();
     }
 
-    public int size(){
+    /**
+     * @return O tamanho da pilha.
+     */
+    public int size() {
         return inseridos;
     }
 
 
-    public void checarTamanho(){
-        if(inseridos == arrayInterno.length){
+    public void checarTamanho() {
+        if (inseridos == arrayInterno.length) {
             Object[] novoArray = new Object[inseridos + ALOCACAO_INICIAL];
-            for(int i = 0; i < arrayInterno.length; i++){
+            for (int i = 0; i < arrayInterno.length; i++) {
                 novoArray[i] = arrayInterno[i];
             }
             arrayInterno = novoArray;
