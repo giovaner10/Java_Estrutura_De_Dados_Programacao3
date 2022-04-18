@@ -1,5 +1,8 @@
 package br.com.cesed.p3.listasequencial;
 
+import br.com.cesed.p3.excessoes.PosicaoInvalidaException;
+import br.com.cesed.p3.excessoes.ValorInvalidoException;
+
 public class ListaSequencial {
 
     public static final int ALOCACAO_INICIAL = 3;
@@ -9,6 +12,9 @@ public class ListaSequencial {
 
 
     public void add(Object novoElemento){
+        if(novoElemento == null){
+            throw new ValorInvalidoException("Elemento nulo nao pode ser inserido");
+        }
 
         checarTamanho();
         arrayInterno[inseridos] = novoElemento;
@@ -22,6 +28,10 @@ public class ListaSequencial {
     }
 
     public Object get(int index){
+        if (index < 0 || index > arrayInterno.length){
+            throw new PosicaoInvalidaException("Impossivel inseeri na posicao: " + index);
+        }
+
         return arrayInterno[index];
     }
 
