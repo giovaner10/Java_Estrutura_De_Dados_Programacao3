@@ -1,4 +1,4 @@
-package br.com.cesed.p3.excecoes;
+package br.com.cesed.p3.sequencial.excecoes;
 
 public class PosicaoInvalidaException extends RuntimeException{
 
