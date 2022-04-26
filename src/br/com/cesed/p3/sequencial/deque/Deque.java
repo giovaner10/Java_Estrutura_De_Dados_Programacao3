@@ -1,4 +1,4 @@
-package br.com.cesed.p3.deque;
+package br.com.cesed.p3.sequencial.deque;
 
 
 public class Deque {
