@@ -4,20 +4,31 @@ public class Main {
     public static void main(String[] args) {
 
         ListaEncadeada lista = new ListaEncadeada();
-        lista.inserirInicio("nome 0");
-        lista.inserirInicio("nome 1");
-        lista.inserirInicio("nome 2");
-        lista.inserirInicio("nome 3");
-        lista.inserirFim("no fim 1");
-        lista.inserirFim("no fim 2");
+        lista.inserirInicio("0");
+        lista.inserirInicio("1");
+        lista.inserirInicio("2");
+        lista.inserirInicio("3");
+        lista.inserirInicio("4");
+        lista.inserirInicio("5");
 
         System.out.println(lista.lista());
-        System.out.println();
+       // lista.retirarFim();
+     //   System.out.println();
+        lista.inserirIndice(4, "INSERIDO");
 
-        while (lista.retirarInicio() != null){
+        System.out.println(lista.lista());
+
+        System.out.println(lista.removerIndice(4));
+        System.out.println(lista.lista());
+
+
+
+
+
+        /*while (lista.retirarInicio() != null){
             System.out.println(lista.lista());
         }
         System.out.println("fim");
-
+*/
     }
 }
