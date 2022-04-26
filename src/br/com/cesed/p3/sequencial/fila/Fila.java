@@ -1,7 +1,7 @@
-package br.com.cesed.p3.fila;
+package br.com.cesed.p3.sequencial.fila;
 
-import br.com.cesed.p3.excecoes.PosicaoInvalidaException;
-import br.com.cesed.p3.excecoes.ValorInvalidoException;
+import br.com.cesed.p3.sequencial.excecoes.PosicaoInvalidaException;
+import br.com.cesed.p3.sequencial.excecoes.ValorInvalidoException;
 
 public class Fila {
 
