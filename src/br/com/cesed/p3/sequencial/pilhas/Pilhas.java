@@ -1,6 +1,6 @@
-package br.com.cesed.p3.pilhas;
+package br.com.cesed.p3.sequencial.pilhas;
 
-import br.com.cesed.p3.excecoes.ValorInvalidoException;
+import br.com.cesed.p3.sequencial.excecoes.ValorInvalidoException;
 
 public class Pilhas {
 
