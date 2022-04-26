@@ -2,7 +2,7 @@ package br.com.cesed.p3.encadeado.fila;
 
 public class ListaEncadeada {
     No inicio;
-    int tamanho;
+    int tamanho ;
 
     public void inserirInicio(String info) {
         No no = new No();
