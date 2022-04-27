@@ -23,7 +23,7 @@ public class PilhaEncadeada {
     }
 
 
-    public Conta pop(Conta novaConta){
+    public Conta pop(){
 
         Conta removido = null;
 
